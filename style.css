@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+}
+
+.mundo{
+      display: inline-block;
+      width: 200px;
+      height:200px;
+     
+      background:url('img/tierra.png');
+      border-radius: 50%;
+      box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+                  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+                  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+      background-size: cover;
+      -webkit-animation: mundogirando 5s infinite linear;
+}
+.linea-mundo{
+    width: 20px;
+    height: 430px;
+    background: white;
+}
+.mundo-linea{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 350px;
+    
+    
+}
+
+.negro{
+    
+    background: #000120;
+}
+
+.rosa{
+    background: #9b59b6;
+    left: 25%;
+}
+.verde{
+    background: #2ecc71;
+    left: 50%;
+}
+.azul{
+    background: #2980b9;
+    left: 75%;
+}
+
+.rosa,.verde,.negro,.azul{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    bottom: 0;    
+}
+
+.footer{
+    width: 100%;
+    color: aliceblue;
+    font-size: 25px;
+    display: inline-block;
+    background: #c0392b;
+}
+@-webkit-keyframes mundogirando {
+  from{
+    background-position: left center;
+  }
+  to{
+    background-position: -396px center;
+  }
+}
