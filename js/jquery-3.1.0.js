@@ -10087,6 +10087,12 @@ $( ".cerrado" ).click(function() {
             $( ".verde" ).animate({"width" : "0%"}, "slow");
             $( ".azul" ).animate({"width" : "0%"}, "slow");
             $( this ).animate({"width" : "100%"}, "slow");
+            $( this ).dblclick(function(){
+                $( ".rosa" ).animate({"width" : "25%"}, "slow");
+                $( ".verde" ).animate({"width" : "25%"}, "slow");
+                $( ".azul" ).animate({"width" : "25%"}, "slow");
+                $( this ).animate({"width" : "25%"});
+            });
         }
     if($(this).hasClass('rosa'))
         {
@@ -10095,6 +10101,13 @@ $( ".cerrado" ).click(function() {
             $( ".azul" ).animate({"width" : "0%"}, "slow");
             $( this ).animate({"width" : "100%"}, "slow");
             $( this ).css({"left" : "0%"}, "slow");
+            $( this ).dblclick(function(){
+                $( ".negro" ).animate({"width" : "25%"}, "slow");
+                $( ".verde" ).animate({"width" : "25%"}, "slow");
+                $( ".azul" ).animate({"width" : "25%"}, "slow");
+                $( this ).animate({"width" : "25%"});
+                $( this ).css({"left" : "25%"});
+            });
         }
     if($(this).hasClass('verde'))
         {
@@ -10103,6 +10116,13 @@ $( ".cerrado" ).click(function() {
             $( ".azul" ).animate({"width" : "0%"}, "slow");
             $( this ).animate({"width" : "100%"}, "slow");
             $( this ).css({"left" : "0%"}, "slow");
+            $( this ).dblclick(function(){
+                $( ".negro" ).animate({"width" : "25%"}, "slow");
+                $( ".rosa" ).animate({"width" : "25%"}, "slow");
+                $( ".azul" ).animate({"width" : "25%"}, "slow");
+                $( this ).animate({"width" : "25%"});
+                $( this ).css({"left" : "50%"});
+            });
         }
     if($(this).hasClass('azul'))
         {
@@ -10111,6 +10131,13 @@ $( ".cerrado" ).click(function() {
             $( ".negro" ).animate({"width" : "0%"}, "slow");
             $( this ).animate({"width" : "100%"}, "slow");
             $( this ).css({"left" : "0%"}, "slow");
+            $( this ).dblclick(function(){
+                $( ".negro" ).animate({"width" : "25%"}, "slow");
+                $( ".rosa" ).animate({"width" : "25%"}, "slow");
+                $( ".verde" ).animate({"width" : "25%"}, "slow");
+                $( this ).animate({"width" : "25%"});
+                $( this ).css({"left" : "75%"});
+            });
         }
 });
 
