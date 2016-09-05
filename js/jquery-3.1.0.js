@@ -10072,3 +10072,45 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+
+
+//////////////////////////////////////////
+//////////////////////////////////////////
+//////////////////////////////////////////
+//////////////////////////////////////////
+
+
+$( ".cerrado" ).click(function() {
+    if($(this).hasClass('negro'))
+        {
+            $( ".rosa" ).animate({"width" : "0%"}, "slow");
+            $( ".verde" ).animate({"width" : "0%"}, "slow");
+            $( ".azul" ).animate({"width" : "0%"}, "slow");
+            $( this ).animate({"width" : "100%"}, "slow");
+        }
+    if($(this).hasClass('rosa'))
+        {
+            $( ".negro" ).animate({"width" : "0%"}, "slow");
+            $( ".verde" ).animate({"width" : "0%"}, "slow");
+            $( ".azul" ).animate({"width" : "0%"}, "slow");
+            $( this ).animate({"width" : "100%"}, "slow");
+            $( this ).css({"left" : "0%"}, "slow");
+        }
+    if($(this).hasClass('verde'))
+        {
+            $( ".rosa" ).animate({"width" : "0%"}, "slow");
+            $( ".negro" ).animate({"width" : "0%"}, "slow");
+            $( ".azul" ).animate({"width" : "0%"}, "slow");
+            $( this ).animate({"width" : "100%"}, "slow");
+            $( this ).css({"left" : "0%"}, "slow");
+        }
+    if($(this).hasClass('azul'))
+        {
+            $( ".rosa" ).animate({"width" : "0%"}, "slow");
+            $( ".verde" ).animate({"width" : "0%"}, "slow");
+            $( ".negro" ).animate({"width" : "0%"}, "slow");
+            $( this ).animate({"width" : "100%"}, "slow");
+            $( this ).css({"left" : "0%"}, "slow");
+        }
+});
+

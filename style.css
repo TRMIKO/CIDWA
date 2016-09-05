@@ -3,6 +3,7 @@ body{
 }
 .container{
     width: 100%;
+    resize: none;
 }
 
 .mundo{
