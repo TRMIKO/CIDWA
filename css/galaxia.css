@@ -1,12 +1,26 @@
 *{
     margin: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 body{
     height: 100%;
+    background: #000120;
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+header{
+    color: white;
+    position: relative;
+    height: auto;
 }
 .container{
     overflow: hidden;
-    background: #000120;
+    
     position: absolute;
     width: 100%;
     height: 100%;
@@ -18,7 +32,8 @@ body{
     top:10%;
 }
 .text{
-
+    float: inherit;
+    position: relative;
     color: white;
     font-size: 23px;
     text-align: center;
