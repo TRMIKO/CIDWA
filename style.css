@@ -73,3 +73,10 @@ body{
     background-position: -396px center;
   }
 }
+
+.triangulo-ezquinado{
+	width: 0;
+	height: 0;
+	border-top: 100px solid #00c4ff;
+	border-right: 100px solid transparent;
+}
