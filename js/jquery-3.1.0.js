@@ -10092,16 +10092,14 @@ $( "#negro" ).click(function() {
 $( "#verde" ).click(function() {
         $( "#negro" ).slideUp();
         $( "#azul" ).slideUp();
-        $( this ).animate({"width" : "100%"}, "slow");
-        $( this ).css({"left" : "0%"});
+        $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
         $( ".triangulo-ezquinado").show();
 });
 
 $( "#azul" ).click(function() {
         $( "#verde" ).slideUp();
         $( "#negro" ).slideUp();
-        $( this ).animate({"width" : "100%"}, "slow");
-        $( this ).css({"left" : "0%"});
+        $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
         $( ".triangulo-ezquinado").show();
 });
 
