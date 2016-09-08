@@ -10081,36 +10081,40 @@ return jQuery;
 
 
 
-$( ".cerrado" ).click(function() {
-    if($(this).hasClass('negro'))
-        {
-            $( ".verde" ).slideUp();
-            $( ".azul" ).slideUp();
-            $( this ).animate({"width" : "100%"}, "slow");            
-        }
-    if($(this).hasClass('verde'))
-        {
-            $( ".negro" ).slideUp();
-            $( ".azul" ).slideUp();
-            $( this ).animate({"width" : "100%"}, "slow");
-            $( this ).css({"left" : "0%"});
-        }
-    if($(this).hasClass('azul'))
-        {
-            $( ".verde" ).slideUp();
-            $( ".negro" ).slideUp();
-            $( this ).animate({"width" : "100%"}, "slow");
-            $( this ).css({"left" : "0%"});
-        }
-    $( ".triangulo-ezquinado").show();
+$( "#negro" ).click(function() {
+    
+        $( "#verde" ).slideUp();
+        $( "#azul" ).slideUp();
+        $( this ).animate({"width" : "100%"}, "slow");  
+        $( ".triangulo-ezquinado").show();
+});
+
+$( "#verde" ).click(function() {
+        $( "#negro" ).slideUp();
+        $( "#azul" ).slideUp();
+        $( this ).animate({"width" : "100%"}, "slow");
+        $( this ).css({"left" : "0%"});
+        $( ".triangulo-ezquinado").show();
+});
+
+$( "#azul" ).click(function() {
+        $( "#verde" ).slideUp();
+        $( "#negro" ).slideUp();
+        $( this ).animate({"width" : "100%"}, "slow");
+        $( this ).css({"left" : "0%"});
+        $( ".triangulo-ezquinado").show();
 });
 
 $( ".triangulo-ezquinado" ).click(function() {
+        
         $( ".triangulo-ezquinado" ).hide();
-        $( ".negro" ).animate({"width" : "33.3%"}, "slow");
-        $( ".negro" ).css({"left" : "0%"});
-        $( ".verde" ).animate({"width" : "33.3%"}, "slow");
-        $( ".verde" ).css({"left" : "33.3%"});
-        $( ".azul" ).animate({"width" : "33.3%"}, "slow");
-        $( ".azul" ).css({"left" : "66.6%"});
+        $( "#negro" ).animate({"width" : "33.3%"}, "slow");
+        $( "#negro" ).css({"left" : "0%"});
+        $( "#verde" ).animate({"width" : "33.3%"}, "slow");
+        $( "#verde" ).css({"left" : "33.3%"});
+        $( "#azul" ).animate({"width" : "33.3%"}, "slow");
+        $( "#azul" ).css({"left" : "66.6%"});
+        $( "#negro" ).show();
+        $( "#verde" ).show();
+        $( "#azul" ).show();
 });
