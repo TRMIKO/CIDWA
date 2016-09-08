@@ -5,12 +5,14 @@ body{
     width: 100%;
     resize: none;
 }
-
+.mundo1{
+  z-index: 1;
+}
 .mundo{
       display: inline-block;
       width: 200px;
       height:200px;
-     
+
       background:url('img/tierra.png');
       border-radius: 50%;
       box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
@@ -25,31 +27,31 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 350px;
-    
-    
+
+
 }
 
-#negro{
-    
+.negro{
+
     background: #000120;
     left: 0%;
 }
 
 
-#verde{
+.verde{
     background: #2ecc71;
     left: 33.3%;
 }
-#azul{
+.azul{
     background: #2980b9;
     left: 66.6%;
 }
 
-#verde, #negro,#azul{
+.verde, .negro,.azul{
     width: 33.3%;
     position: absolute;
     top: 0;
-    bottom: 0;    
+    bottom: 0;
 }
 
 .footer{
@@ -69,11 +71,11 @@ body{
 }
 
 .triangulo-ezquinado{
-    z-index: 1;
+    z-index: 2;
 	width: 0;
 	height: 0;
 	border-top: 100px solid #00c4ff;
-	border-right: 100px solid transparent;   
+	border-right: 100px solid transparent;
     position: absolute;
     display: none;
 }
