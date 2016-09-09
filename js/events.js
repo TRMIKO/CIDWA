@@ -61,3 +61,46 @@ $( ".pestana" ).click(function() {
       console.log('asd');
 
 });
+
+///////////////////////FUNCION PARA LAS HORAS DEL DIA///////////////////////////////////
+
+var fecha = new Date();
+var hora = fecha.getHours();
+
+if (hora > 20 || hora <= 6) {
+    $( ".negro" ).css('background', '#597e81');
+    $( ".verde" ).css('background', '#de516a');
+    $( ".azul" ).css('background', '#6f4aa0');
+}
+
+if (hora > 6 && hora <= 15) {
+    $( ".negro" ).css('background', '#de516a');
+    $( ".verde" ).css('background', '#6f4aa0');
+    $( ".azul" ).css('background', '#597e81');
+}
+
+if (hora > 15 && hora <= 20) {
+    $( ".negro" ).css('background', '#6f4aa0');
+    $( ".verde" ).css('background', '#597e81');
+    $( ".azul" ).css('background', '#de516a');
+}
+
+///////////////////////TERMINA  FUNCION PARA LAS HORAS DEL DIA///////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
