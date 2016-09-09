@@ -14,6 +14,10 @@ body{
     position: fixed;
     z-index: 1;
 }
+#otracosa{
+    height: 100%;
+    width: 100%;
+}
 header{
     color: white;
     position: relative;
