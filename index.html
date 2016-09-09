@@ -3,17 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/galaxia.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="./css/galaxia.css">
+    
     <title>mundo</title>
 
 </head>
 
 <body>
-    <article class="container">
+    <div class="container">
 
-        <div class="column">
-            <div class="pestana"><p class="home2">Home</p><img src="img/home-1.png" alt="" class="home1"></div>
+        
+            
             <div class="cerrado negro">
             <div  id="otracosa" style="display:block"></div>
 
@@ -22,17 +23,7 @@
                     <div class="mundo"></div>
 
                 </div>
-            </div>
-            <div class="cerrado verde" id="">
-
-            </div>
-            <div class="cerrado azul" id="">
-
-            </div>
-        </div>
-    </article>
-
-    <div class="mundo1" style="display:none">
+                <div class="mundo1" style="display:none">
       <div id="particles-js"></div>
 
 
@@ -73,11 +64,43 @@
 
        </div>
     </div>
+            </div>
+            <div class="cerrado verde" id="">
+
+            </div>
+            <div class="cerrado azul" id="">
+
+            </div>
+       
+        <div class="pestana"><p class="home2">Home</p><img src="img/home-1.png" alt="" class="home1"></div>
+    </div>
+
+   
 
     <script src="./js/jquery-3.1.0.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/particulas.js"></script>
     <script src="./js/events.js"></script>
+    <script>
+     var consulta = window.matchMedia('(max-width: 800px)');
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById('burguer-button');
+      
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          // si se cumple hagamos esto
+          console.log('se cumplió la condicion');
+         
+        } else {
+          
+          // si no se cumple hagamos esto
+          console.log('no se cumplió la condicion');
+        }
+      }
+      mediaQuery();
+    </script>
 </body>
 
 </html>

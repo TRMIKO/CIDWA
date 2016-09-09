@@ -1,17 +1,23 @@
+*{
+     margin: 0;
+    border: 0;
+}
 body{
-    margin: 0;
+  
+    max-height: 955px;
 }
 .container{
     width: 100%;
-    resize: none;
+    height: 100%;
+    
 }
 .mundo1{
   z-index: 1;
 }
 .mundo{
       display: inline-block;
-    position: absolute;
-    top: 50%;
+      position: absolute;
+      top: 50%;
       width: 200px;
       height:200px;
 
@@ -26,51 +32,40 @@ body{
 
 .mundo-linea{
     
+
    display: flex;
    justify-content: center;
+
     
 
 
 }
+.verde, .negro,.azul{
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    
+}
 
 .negro{
+    
 
     background: #000120;
-    left: 0%;
 }
 
 
 .verde{
-    background: #2ecc71;
     left: 33.3%;
+    background: #2ecc71;
+   
 }
 .azul{
-    background: #2980b9;
     left: 66.6%;
+    background: #2980b9;
+    
 }
 
-.verde, .negro,.azul{
-    width: 33.3%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-}
-
-.footer{
-    width: 100%;
-    color: aliceblue;
-    font-size: 25px;
-    display: inline-block;
-    background: #c0392b;
-}
-@-webkit-keyframes mundogirando {
-  from{
-    background-position: left center;
-  }
-  to{
-    background-position: -396px center;
-  }
-}
 
 .pestana{
     z-index: 2;
@@ -80,6 +75,7 @@ body{
 	border-right: 100px solid transparent;
     position: absolute;
     display: none;
+    top: 0;
 }
 
 .home2{
@@ -95,4 +91,54 @@ body{
     -webkit-transform: rotate(315deg);
     top: -125px;
     left: -5px;
+}
+
+
+
+
+
+/*-----------------RESPONSIVE--------------*/
+
+@media screen and (max-width: 800px){
+   
+.negro{
+    position: relative;
+    
+   height: 500px;
+}
+
+    .mundo{
+       top:  20%;
+    }
+
+
+
+.verde{
+   
+    
+   height: 500px;
+   
+}
+.azul{
+   
+   height: 500px;
+}
+
+.verde, .negro,.azul{
+    width: 100%;
+    position: static;
+    
+    display: inline-block;
+}
+
+/*---------------ANIMACIONES--------------*/
+
+
+@-webkit-keyframes mundogirando {
+  from{
+    background-position: left center;
+  }
+  to{
+    background-position: -396px center;
+  }
 }
