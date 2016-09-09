@@ -149,7 +149,7 @@ header{
          -webkit-animation: walkP 28.0s linear  infinite;
 }
 .objetoN{
-         -webkit-animation: walkW 10.0s linear  infinite;
+         -webkit-animation: walkN 10.0s linear  infinite;
 }
 
 
@@ -182,8 +182,6 @@ header{
 
         left: -20%;
     }
-    //to {top: 0px; left:0px}
-   //from {top: 600px; left:600px}
-
+  
 }
 /*-------------  ANIMACION      ----*/
