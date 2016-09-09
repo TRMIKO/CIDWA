@@ -10105,16 +10105,7 @@ $( ".azul" ).click(function() {
 
 $( ".triangulo-ezquinado" ).click(function() {
         $( ".triangulo-ezquinado" ).hide();
-        $( ".negro" ).slideDown("slow", function(){
-            $( ".negro" ).animate({"width" : "33.3%", "left" : "0%"}, "slow")
-        });
-        $( ".verde" ).slideDown("slow", function(){
-            $( ".verde" ).animate({"width" : "33.3%", "left" : "33.3%"}, "slow")
-        });
-        $( ".azul" ).slideDown("slow", function(){
-            $( ".azul" ).animate({"width" : "33.3%", "left" : "66.6%"}, "slow")
-        });
-        $( ".negro" ).show();
-        $( ".verde" ).show();
-        $( ".azul" ).show();
+        $( ".negro" ).animate({"width" : "33.3%", "left" : "0%"}, "slow")
+        $( ".verde" ).animate({"width" : "33.3%", "left" : "33.3%"}, "slow")
+        $( ".azul" ).animate({"width" : "33.3%", "left" : "66.6%"}, "slow")
 });
