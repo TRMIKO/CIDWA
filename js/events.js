@@ -6,7 +6,7 @@ $( ".negro" ).click(function() {
         $( ".verde" ).animate({"width" : "0%", "left" : "100%"}, "slow");
         $( ".azul" ).animate({"width" : "0%", "left" : "100%"}, "slow");
         $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");  
-        $( ".triangulo-ezquinado").fadeIn(1500);
+        $( ".pestana").fadeIn(1500);
 			$(".mundo1").css('display','block');
 			$("#otracosa").css('display','none');
 
@@ -31,7 +31,7 @@ $( ".verde" ).click(function() {
         $( ".negro" ).animate({"width" : "0%", "left" : "0%"}, "slow");
         $( ".azul" ).animate({"width" : "0%", "left" : "100%"}, "slow");
         $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
-        $( ".triangulo-ezquinado").fadeIn(1500);
+        $( ".pestana").fadeIn(1500);
         console.log('asd');
 
 });
@@ -40,7 +40,7 @@ $( ".azul" ).click(function() {
         $( ".verde" ).animate({"width" : "0%", "left" : "0%"}, "slow");
         $( ".negro" ).animate({"width" : "0%", "left" : "0"}, "slow");
         $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
-        $( ".triangulo-ezquinado").fadeIn(1500);
+        $( ".pestana").fadeIn(1500);
         console.log('asd');
 
 });
@@ -50,8 +50,8 @@ $(document).ready(function(){
 
 
 });
-$( ".triangulo-ezquinado" ).click(function() {
-        $( ".triangulo-ezquinado" ).hide();
+$( ".pestana" ).click(function() {
+        $( ".pestana" ).hide();
         $( ".negro" ).animate({"width" : "33.3%", "left" : "0%"}, "slow")
         $( ".verde" ).animate({"width" : "33.3%", "left" : "33.3%"}, "slow")
         $( ".azul" ).animate({"width" : "33.3%", "left" : "66.6%"}, "slow")

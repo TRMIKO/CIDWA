@@ -70,19 +70,27 @@ body{
   }
 }
 
-.triangulo-ezquinado{
+.pestana{
     z-index: 2;
 	width: 0;
 	height: 0;
-	border-top: 100px solid #ffffff;
+	border-top: 100px solid #727272;
 	border-right: 100px solid transparent;
     position: absolute;
     display: none;
 }
 
-.home{
+.home2{
+    color: #fff;
     position: relative;
     -webkit-transform: rotate(315deg);
-    top: -65px;
-    left: 15px;
+    top: -55px;
+    left: 25px;
+}
+
+.home1{
+    position: relative;
+    -webkit-transform: rotate(315deg);
+    top: -125px;
+    left: -5px;
 }
