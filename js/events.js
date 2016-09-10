@@ -3,10 +3,10 @@
 
 $( ".negro" ).click(function() {
 
-        $( ".verde" ).slideUp("slow");
-        $( ".azul" ).slideUp("slow");
-        $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
-        $( ".triangulo-ezquinado").show();
+        $( ".verde" ).animate({"width" : "0%", "left" : "100%"}, "slow");
+        $( ".azul" ).animate({"width" : "0%", "left" : "100%"}, "slow");
+        $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");  
+        $( ".pestana").fadeIn(1500);
 			$(".mundo1").css('display','block');
 			$("#otracosa").css('display','none');
 
@@ -28,19 +28,19 @@ $( ".negro" ).click(function() {
 });
 
 $( ".verde" ).click(function() {
-        $( ".negro" ).slideUp("slow");
-        $( ".azul" ).slideUp("slow");
+        $( ".negro" ).animate({"width" : "0%", "left" : "0%"}, "slow");
+        $( ".azul" ).animate({"width" : "0%", "left" : "100%"}, "slow");
         $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
-        $( ".triangulo-ezquinado").show();
+        $( ".pestana").fadeIn(1500);
         console.log('asd');
 
 });
 
 $( ".azul" ).click(function() {
-        $( ".verde" ).slideUp("slow");
-        $( ".negro" ).slideUp("slow");
+        $( ".verde" ).animate({"width" : "0%", "left" : "0%"}, "slow");
+        $( ".negro" ).animate({"width" : "0%", "left" : "0"}, "slow");
         $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
-        $( ".triangulo-ezquinado").show();
+        $( ".pestana").fadeIn(1500);
         console.log('asd');
 
 });
@@ -50,23 +50,57 @@ $(document).ready(function(){
 
 
 });
-$( ".triangulo-ezquinado" ).click(function() {
-        $( ".triangulo-ezquinado" ).hide();
-        $( ".negro" ).slideDown("slow", function(){
-            $( ".negro" ).animate({"width" : "33.3%", "left" : "0%"}, "slow")
-        });
-        $( ".verde" ).slideDown("slow", function(){
-            $( ".verde" ).animate({"width" : "33.3%", "left" : "33.3%"}, "slow")
-        });
-        $( ".azul" ).slideDown("slow", function(){
-            $( ".azul" ).animate({"width" : "33.3%", "left" : "66.6%"}, "slow")
-        });
-        $( ".negro" ).show();
-        $( ".verde" ).show();
-        $( ".azul" ).show();
+$( ".pestana" ).click(function() {
+        $( ".pestana" ).hide();
+        $( ".negro" ).animate({"width" : "33.3%", "left" : "0%"}, "slow")
+        $( ".verde" ).animate({"width" : "33.3%", "left" : "33.3%"}, "slow")
+        $( ".azul" ).animate({"width" : "33.3%", "left" : "66.6%"}, "slow")
 
 			$(".mundo1").css('display','none');
       $("#otracosa").css('display','block');
       console.log('asd');
 
 });
+
+///////////////////////FUNCION PARA LAS HORAS DEL DIA///////////////////////////////////
+
+var fecha = new Date();
+var hora = fecha.getHours();
+
+if (hora > 20 || hora <= 6) {
+    $( ".negro" ).css('background', '#597e81');
+    $( ".verde" ).css('background', '#de516a');
+    $( ".azul" ).css('background', '#6f4aa0');
+}
+
+if (hora > 6 && hora <= 15) {
+    $( ".negro" ).css('background', '#de516a');
+    $( ".verde" ).css('background', '#6f4aa0');
+    $( ".azul" ).css('background', '#597e81');
+}
+
+if (hora > 15 && hora <= 20) {
+    $( ".negro" ).css('background', '#6f4aa0');
+    $( ".verde" ).css('background', '#597e81');
+    $( ".azul" ).css('background', '#de516a');
+}
+
+///////////////////////TERMINA  FUNCION PARA LAS HORAS DEL DIA///////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,15 +1,23 @@
+*{
+     margin: 0;
+    border: 0;
+}
 body{
-    margin: 0;
+  
+    max-height: 955px;
 }
 .container{
     width: 100%;
-    resize: none;
+    height: 100%;
+    
 }
 .mundo1{
   z-index: 1;
 }
 .mundo{
       display: inline-block;
+      position: absolute;
+      top: 50%;
       width: 200px;
       height:200px;
 
@@ -23,44 +31,109 @@ body{
 }
 
 .mundo-linea{
+    
+
    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 350px;
+   justify-content: center;
+
+    
 
 
 }
+.verde, .negro,.azul{
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    
+}
 
 .negro{
+    
 
     background: #000120;
-    left: 0%;
 }
 
 
 .verde{
-    background: #2ecc71;
     left: 33.3%;
+    background: #2ecc71;
+   
 }
 .azul{
-    background: #2980b9;
     left: 66.6%;
+    background: #2980b9;
+    
+}
+
+
+.pestana{
+    z-index: 2;
+	width: 0;
+	height: 0;
+	border-top: 100px solid #727272;
+	border-right: 100px solid transparent;
+    position: absolute;
+    display: none;
+    top: 0;
+}
+
+.home2{
+    color: #fff;
+    position: relative;
+    -webkit-transform: rotate(315deg);
+    top: -55px;
+    left: 25px;
+}
+
+.home1{
+    position: relative;
+    -webkit-transform: rotate(315deg);
+    top: -125px;
+    left: -5px;
+}
+
+
+
+
+
+/*-----------------RESPONSIVE--------------*/
+
+@media screen and (max-width: 800px){
+   
+.negro{
+    position: relative;
+    
+   height: 500px;
+}
+
+    .mundo{
+       top:  20%;
+    }
+
+
+
+.verde{
+   
+    
+   height: 500px;
+   
+}
+.azul{
+   
+   height: 500px;
 }
 
 .verde, .negro,.azul{
-    width: 33.3%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    width: 100%;
+    position: static;
+    
+    display: inline-block;
 }
 
-.footer{
-    width: 100%;
-    color: aliceblue;
-    font-size: 25px;
-    display: inline-block;
-    background: #c0392b;
-}
+/*---------------ANIMACIONES--------------*/
+
+
 @-webkit-keyframes mundogirando {
   from{
     background-position: left center;
@@ -68,14 +141,4 @@ body{
   to{
     background-position: -396px center;
   }
-}
-
-.triangulo-ezquinado{
-    z-index: 2;
-	width: 0;
-	height: 0;
-	border-top: 100px solid #00c4ff;
-	border-right: 100px solid transparent;
-    position: absolute;
-    display: none;
 }

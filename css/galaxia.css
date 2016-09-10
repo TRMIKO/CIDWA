@@ -1,11 +1,10 @@
 *{
     margin: 0;
-    -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+   
 }
 body{
     height: 100%;
+   height: 100%;
     background: #000120;
 }
 #particles-js{
@@ -13,6 +12,10 @@ body{
     height: 100%;
     position: fixed;
     z-index: 1;
+}
+#otracosa{
+    height: 100%;
+    width: 100%;
 }
 header{
     color: white;
@@ -145,7 +148,7 @@ header{
          -webkit-animation: walkP 28.0s linear  infinite;
 }
 .objetoN{
-         -webkit-animation: walkW 10.0s linear  infinite;
+         -webkit-animation: walkN 10.0s linear  infinite;
 }
 
 
@@ -178,8 +181,6 @@ header{
 
         left: -20%;
     }
-    //to {top: 0px; left:0px}
-   //from {top: 600px; left:600px}
-
+  
 }
 /*-------------  ANIMACION      ----*/
