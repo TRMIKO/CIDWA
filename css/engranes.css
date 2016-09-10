@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+  margin: 0px;
+}
+body{
+    background-color:#FFCC66;
+}
+
+.engran1
+{
+    height: 192.58px;
+    width: :193px;
+    position: relative;
+    right: 83px;  
+}
+.engran2{
+    height: 232px;
+    width: : 232px;
+    position: relative;
+    bottom: -90px;
+    right: 330px;
+}
+.engran3{
+    height: auto;
+    width: auto;
+    position: relative;
+    bottom: 420px;
+    right: 99px    
+}
+.engran4{
+    height: 400px;
+    position: relative;
+    bottom: 610px;
+    right: 20px
+}
+.derecha{
+-webkit-animation: der 3s linear infinite;
+}
+.izquierda {
+-webkit-animation: izq 3s linear infinite;
+
+}
+
+
+@-webkit-keyframes der {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+to {
+    -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes izq {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+to {
+    -webkit-transform: rotate(0deg);
+    }
+}
