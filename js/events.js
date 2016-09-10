@@ -1,9 +1,6 @@
 var consulta = window.matchMedia('(max-width: 800px)');
 consulta.addListener(mediaQuery);
 
-var $burguerButton = document.getElementById('burguer-button');
-
-
 function mediaQuery() {
     if (consulta.matches) {
         ///////////////////////////////////////PANTALLAS DE MENOS DE 800PX//////////////////////////////////////////////
@@ -15,7 +12,7 @@ function mediaQuery() {
                 "height": "0px"
             }, "slow");
             $(this).animate({
-                "height": "600px"
+                "height": "1500px"
             }, "slow");
             $(".pestana").fadeIn(1500);
             $(".mundo1").css('display', 'block');
@@ -44,7 +41,7 @@ function mediaQuery() {
                 "height": "0px"
             }, "slow");
             $(this).animate({
-                "height": "600px"
+                "height": "1500px"
             }, "slow");
             $(".pestana").fadeIn(1500);
         });
@@ -57,7 +54,7 @@ function mediaQuery() {
                 "height": "0px"
             }, "slow");
             $(this).animate({
-                "height": "600px"
+                "height": "1500px"
             }, "slow");
             $(".pestana").fadeIn(1500);
         });
@@ -65,13 +62,13 @@ function mediaQuery() {
         $(".pestana").click(function () {
             $(".pestana").hide();
             $(".negro").animate({
-                "height": "200px"
+                "height": "500px"
             }, "slow");
             $(".verde").animate({
-                "height": "200px"
+                "height": "500px"
             }, "slow");
             $(".azul").animate({
-                "height": "200px"
+                "height": "500px"
             }, "slow");
 
             $(".mundo1").css('display', 'none');
