@@ -10081,31 +10081,40 @@ return jQuery;
 
 
 
-$( ".negro" ).click(function() {
+$( "#negro" ).click(function() {
     
-        $( ".verde" ).animate({"width" : "0%", "left" : "100%"}, "slow");
-        $( ".azul" ).animate({"width" : "0%", "left" : "100%"}, "slow");
+        $( "#verde" ).slideUp("slow");
+        $( "#azul" ).slideUp("slow");
         $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");  
-        $( ".pestana").fadeIn(1500);
+        $( ".triangulo-ezquinado").show();
 });
 
-$( ".verde" ).click(function() {
-        $( ".negro" ).animate({"width" : "0%", "left" : "0%"}, "slow");
-        $( ".azul" ).animate({"width" : "0%", "left" : "100%"}, "slow");
+$( "#verde" ).click(function() {
+        $( "#negro" ).slideUp("slow");
+        $( "#azul" ).slideUp("slow");
         $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
-        $( ".pestana").fadeIn(1500);
+        $( ".triangulo-ezquinado").show();
 });
 
-$( ".azul" ).click(function() {
-        $( ".verde" ).animate({"width" : "0%", "left" : "0%"}, "slow");
-        $( ".negro" ).animate({"width" : "0%", "left" : "0"}, "slow");
+$( "#azul" ).click(function() {
+        $( "#verde" ).slideUp("slow");
+        $( "#negro" ).slideUp("slow");
         $( this ).animate({"width" : "100%", "left" : "0%"}, "slow");
-        $( ".pestana").fadeIn(1500);
+        $( ".triangulo-ezquinado").show();
 });
 
-$( ".pestana" ).click(function() {
-        $( ".pestana" ).hide();
-        $( ".negro" ).animate({"width" : "33.3%", "left" : "0%"}, "slow")
-        $( ".verde" ).animate({"width" : "33.3%", "left" : "33.3%"}, "slow")
-        $( ".azul" ).animate({"width" : "33.3%", "left" : "66.6%"}, "slow")
+$( ".triangulo-ezquinado" ).click(function() {
+        $( ".triangulo-ezquinado" ).hide();
+        $( "#negro" ).slideDown("slow", function(){
+            $( "#negro" ).animate({"width" : "33.3%", "left" : "0%"}, "slow")
+        });
+        $( "#verde" ).slideDown("slow", function(){
+            $( "#verde" ).animate({"width" : "33.3%", "left" : "33.3%"}, "slow")
+        });
+        $( "#azul" ).slideDown("slow", function(){
+            $( "#azul" ).animate({"width" : "33.3%", "left" : "66.6%"}, "slow")
+        });
+        $( "#negro" ).show();
+        $( "#verde" ).show();
+        $( "#azul" ).show();
 });
