@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  border: 0;
+}
+body{
+
+  max-height: 955px;
+  background: #000120;
+}
+header{
+  color: white;
+  position: relative;
+  height: auto;
+}
+.container{
+  width: 100%;
+  height: 100%;
+
+}
+.container2{
+  overflow: hidden;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+
+}
+.resp{
+  display: flex;
+  justify-content: center;
+  width: auto;
+
+}
+
+.centro{
+
+  position:absolute;
+  top: 50%;
+  height: 50%;
+}
+#particles-js{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+#otracosa{
+  height: 100%;
+  width: 100%;
+}
+.formato{
+  display: inline-block;
+  position: absolute;
+  top:10%;
+}
+
+
+/*-------------------SECCCION UNIVERSO--------------*/
+.text{
+  float: inherit;
+  position: relative;
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 185px;
+  font-family: 'Baloo Tamma', cursive;
+
+}
+
+.text1{
+
+  margin-top: 50px;
+  width: 80%;
+  display: inline-block;
+
+}
+.mundo1{
+  z-index: 1;
+}
+.mundo{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height:200px;
+
+  background:url('../img/tierra.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.mundo-linea{
+
+
+  display: flex;
+  justify-content: center;
+
+
+
+
+}
+.marte{
+  position: absolute;
+
+  display: inline-block;
+  width: 150px;
+  height:150px;
+
+  background:url('../img/marte.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.luna{
+  position: absolute;
+
+  display: inline-block;
+  width: 150px;
+  height:150px;
+
+  background:url('../img/luna.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.marteP{
+
+  position: absolute;
+  top:30%;
+
+  width: 100%;
+}
+.lunaP{
+
+  position: absolute;
+  top:40%;
+
+
+  width: 100%;
+}
+.nave{
+  width: 100px;
+
+
+}
+/*-------------------SECCCION UNIVERSO--------------*/
+/*-------------------SECCIONESPRINCIPALES INDEX----------------*/
+
+.verde, .negro,.azul{
+  width: 33%;
+  height: 100%;
+  min-height: 800px;
+  position: absolute;
+  display: inline-block;
+
+}
+
+.negro{
+
+
+  background: #000120;
+}
+
+
+.verde{
+  left: 33.3%;
+  background: #2ecc71;
+
+}
+.azul{
+  left: 66.6%;
+  background: #2980b9;
+
+}
+/*-------------------SECCIONESPRINCIPALES INDEX----------------*/
+
+.pestana{
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #727272;
+  border-right: 100px solid transparent;
+  position: absolute;
+  display: none;
+  top: 0;
+}
+
+.home2{
+  color: #fff;
+  position: relative;
+  -webkit-transform: rotate(315deg);
+  top: -55px;
+  left: 25px;
+}
+
+.home1{
+  position: relative;
+  -webkit-transform: rotate(315deg);
+  top: -125px;
+  left: -5px;
+}
+
+
+
+
+
+/*-----------------RESPONSIVE--------------*/
+
+@media screen and (max-width: 800px){
+
+  .negro{
+    position: relative;
+
+    height: 500px;
+  }
+
+  .mundo{
+    top:  20%;
+  }
+
+
+
+  .verde{
+
+
+    height: 500px;
+
+  }
+  .azul{
+
+    height: 500px;
+  }
+
+  .verde, .negro,.azul{
+    width: 100%;
+    position: static;
+
+    display: inline-block;
+  }
+
+}
+/*-----------------RESPONSIVE--------------*/
+/*-------------  ANIMACION      ----*/
+.planetaP{
+  -webkit-animation: walkP 25.0s linear  infinite;
+}
+.planetaN{
+  -webkit-animation: walkN 30.0s linear  infinite;
+}
+.objetoP{
+  -webkit-animation: walkP 28.0s linear  infinite;
+}
+.objetoN{
+  -webkit-animation: walkN 10.0s linear  infinite;
+}
+
+
+
+@-webkit-keyframes mundogirando {
+  from{
+    background-position: left center;
+  }
+  to{
+    background-position: -396px center;
+  }
+}
+@-webkit-keyframes walkP{
+  0% {
+
+    left: -20%;
+  }
+  100% {
+
+    left: 120%;
+  }
+
+}
+@-webkit-keyframes walkN{
+  0% {
+
+    left: 100%;
+  }
+  100% {
+
+    left: -20%;
+  }
+
+}
+/*-------------  ANIMACION      ----*/
