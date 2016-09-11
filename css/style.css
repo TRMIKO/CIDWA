@@ -19,7 +19,7 @@ header{
 }
 .container2{
   overflow: hidden;
-
+  height: 100%;
   position: absolute;
   width: 100%;
 
@@ -171,6 +171,14 @@ header{
 }
 .cohete img{
   width: 100px;
+}
+.nave_esp{
+  display: inline-block;
+  position: absolute;
+  top:80%;
+}
+.nave_esp img{
+  width: 70px;
 }
 
 /*-------objrtos-----*/
