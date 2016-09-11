@@ -16,6 +16,7 @@ function mediaQuery() {
                 "height": "1500px"
             }, "slow");
             $(".pestana").fadeIn(1500);
+            $(".pestana").css({"position" : "fixed"});
 
             if (bandera === 1) {
                 $(".mundo1").css('display', 'block');
@@ -49,6 +50,7 @@ function mediaQuery() {
             }, "slow");
             $(".pestana").fadeIn(1500);
             $(".mundo").hide("slow");
+            $(".pestana").css({"position" : "fixed"});
         });
 
         $(".azul").click(function () {
@@ -63,6 +65,11 @@ function mediaQuery() {
             }, "slow");
             $(".pestana").fadeIn(1500);
             $(".mundo").hide("slow");
+            $(".engranes").animate({
+                "width": "100%"
+            }, "slow");
+            $(".pestana").css({"position" : "fixed"});
+            
         });
 
         $(".pestana").click(function () {
@@ -81,6 +88,10 @@ function mediaQuery() {
             $("#otracosa").css('display', 'block');
             console.log('asd');
             bandera = 1;
+            $(".engranes").animate({
+                "width": "0%"
+            }, "slow");
+            
         });
         ///////////////////////////////////////PANTALLAS DE MENOS DE 800PX//////////////////////////////////////////////
 
@@ -143,21 +154,27 @@ function mediaQuery() {
         });
 
         $(".azul").click(function () {
-            $(".verde").animate({
-                "width": "0%",
-                "left": "0%"
-            }, "slow");
-            $(".negro").animate({
-                "width": "0%",
-                "left": "0"
-            }, "slow");
-            $(this).animate({
-                "width": "100%",
-                "left": "0%"
-            }, "slow");
-            $(".pestana").fadeIn(1500);
-            console.log('asd');
-
+            if (bandera === 1) {
+                $(".engranes").animate({
+                    "width": "100%",
+                    "left": "0%"
+                }, "slow");
+                $(".verde").animate({
+                    "width": "0%",
+                    "left": "0%"
+                }, "slow");
+                $(".negro").animate({
+                    "width": "0%",
+                    "left": "0"
+                }, "slow");
+                $(this).animate({
+                    "width": "100%",
+                    "left": "0%"
+                }, "slow");
+                $(".pestana").fadeIn(1500);
+                console.log('asd');
+                bandera = 0;
+            }
         });
         var velocity = 23;
         $(document).ready(function () {
@@ -179,7 +196,10 @@ function mediaQuery() {
                 "width": "33.3%",
                 "left": "66.6%"
             }, "slow");
-
+            $(".engranes").animate({
+                "width": "0%",
+                "left": "50%"
+            }, "slow");
             $(".mundo1").css('display', 'none');
             $("#otracosa").css('display', 'block');
             console.log('asd');
