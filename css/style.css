@@ -218,11 +218,7 @@ header{
 
 @media screen and (max-width: 800px){
 
-  .negro{
-    position: relative;
 
-    height: 500px;
-  }
 
   .mundo{
     top:  20%;
@@ -230,20 +226,14 @@ header{
 
 
 
-  .verde{
 
 
-    height: 500px;
-
-  }
-  .azul{
-
-    height: 500px;
-  }
 
   .verde, .negro,.azul{
     width: 100%;
     position: static;
+    height: 500px;
+    min-height: 100%;
 
     display: inline-block;
   }
@@ -260,7 +250,7 @@ header{
 .objetoP{
   -webkit-animation: walkP 28.0s linear  infinite;
 }
-.objetoN{
+.objetoN                   {
   -webkit-animation: walkN 10.0s linear  infinite;
 }
 
