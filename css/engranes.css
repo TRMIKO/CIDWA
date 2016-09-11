@@ -2,74 +2,163 @@
     padding: 0px;
   margin: 0px;
 }
+.container{
+    -webkit-transform: scale(1,1);
+    display: inline-block;
+    position: relative;
+    background:#000;
+    width:1365px;
+    height: 665px;
+    overflow: hidden;
+}
+.cuadrado{
+    color: white;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    
+   position: absolute;
+    top: 0;
+     float: inherit;
+    color: white;
+    font-size: 53px;
+    font-family: 'Baloo Tamma', cursive;
+}
 body{
     background-color:#FFCC66;
 }
-
 .engran1
 {
-    height: 192.58px;
-    width: :193px;
-    position: relative;
-    right: 83px;  
+    position: absolute; 
 }
 .engran2{
-    height: 232px;
-    width: : 232px;
-    position: relative;
-    bottom: -90px;
-    right: 330px;
+    height: 300px;
+    position:absolute;
+    bottom: 250px;
+    left:100px;
+    
 }
 .engran3{
-    height: auto;
-    width: auto;
-    position: relative;
-    bottom: 420px;
-    right: 99px    
+height: 300px;
+    position: absolute;
+    left:350px;
+    bottom: 390px;
+    
+      
 }
 .engran4{
-    height: 400px;
-    position: relative;
-    bottom: 610px;
-    right: 20px
+height: 100px;
+    position: absolute;
+    top:20px;
+    left: 200px;
+
 }
 .engran5{
-    height: 400px;
-    position: relative;
-    bottom: 999px;
-    left: 300px
+    height: 200px;
+ position: absolute;
+    right: 570px;
+    bottom: 600px;
 }
 .engran6{
     height: 400px;
-    position: relative;
-    bottom: 500px;
-    right: 20px
+    position: absolute;
+    bottom: 120px;
+    right: 400px
 }
 .engran7{
-    height: 400px;
-    position: relative;
-    bottom: 1850px;
-    right: 280px
+    height: 200px;
+    position: absolute;
+    bottom: 150px;
+    left: 380px
 }
 .engran8{
-    height: 400px;
-    position: relative;
-    bottom: 610px;
-    right: 20px
+    height: 300px;
+    position: absolute;
+    left:-200px;
+    top:150px;
+
 }
 .engran9{
-    height: 400px;
-    position: relative;
-    bottom: 610px;
-    right: 20px
+    height: 100px;
+    position: absolute;
+    top: 410px;
+    left: 20px
 }
+.engran10{
+    height: 300px;
+    position: absolute;
+    top: 500px;
+    left: -100px
+}
+.engran11{
+    height: 250px;
+    position: absolute;
+    right: 250px;
+    top:-10px;
+}
+.engran12{
+    height: 300px;
+    position: absolute;
+    top:500px;
+    right: 860px;
+}
+.engran13{
+    height: 250px;
+    position: absolute;
+    right: 210px;
+    top: 400px;
+}
+.engran14{
+    height: 150px;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+.engran15{
+    height: 350px;
+    position: absolute;
+    top:500px;
+    right: 530px;
+}
+.engran16{
+    height: 350px;
+    position: absolute;
+    top:400px;
+    right: -130px
+}
+.engran17{
+    height: 110px;
+    position: absolute;
+    right: 500px;
+}
+.engran18{
+    height: 350px;
+    position: absolute;
+    bottom: 500px;
+    right: -60px;
+}
+.engran19{
+    height: 250px;
+    position: absolute;
+    right: -100px;
+    top: 150px;
+}
+.engran20{
+    height: 150px;
+    position: absolute;
+    top: 270px;
+    right: 200px;
+}
+
+
 .derecha{
--webkit-animation: der 3s linear infinite;
+-webkit-animation: 3s der linear infinite;
 }
 .izquierda {
--webkit-animation: izq 3s linear infinite;
-transform: 
-
+                    -webkit-animation: 3s izq linear infinite;
 }
 
 
