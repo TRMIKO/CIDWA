@@ -23,10 +23,26 @@ header{
   position: absolute;
   width: 100%;
   top: 0;
-
-
+}
+.aeroazul img{
+    width: 200px;
 
 }
+.aeroazul{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+}
+
+figure img{
+    width: 200px;
+
+}
+figure{
+   text-align: center;
+
+}
+
 .resp{
   display: flex;
   justify-content: center;
@@ -77,7 +93,7 @@ header{
   z-index: 8;
 
 }
-.encabezado{
+.encabezado1,.encabezado2,.encabezado3{
 
   color: white;
   font-size: 43px;
@@ -241,12 +257,12 @@ header{
 
 .verde{
   left: 33.3%;
-  background: #2ecc71;
+  background: #8BD6EB;
 
 }
 .azul{
   left: 66.6%;
-  background: #2980b9;
+  background: #e67e22;
 
 }
 /*-------------------SECCIONESPRINCIPALES INDEX----------------*/
@@ -348,3 +364,9 @@ header{
 
 }
 /*-------------  ANIMACION      ----*/
+
+
+
+.principal {
+    display: none;
+}
