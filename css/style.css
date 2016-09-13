@@ -24,22 +24,21 @@ header{
   width: 100%;
   top: 0;
 }
-.aeroazul img{
-    width: 200px;
+.container3{
+
+
+  display: flex;
+  justify-content: center;
 
 }
-.aeroazul{
-    display: inline-block;
-    position: absolute;
-    top:50%;
-}
+
 
 figure img{
-    width: 200px;
+  width: 200px;
 
 }
 figure{
-   text-align: center;
+  text-align: center;
 
 }
 
@@ -67,6 +66,12 @@ figure{
   top: 0;
 }
 #otracosa{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#otracosa2{
   position: absolute;
   top: 0;
   height: 100%;
@@ -103,7 +108,14 @@ figure{
   z-index: 8;
 
 }
+.text2{
+ color: white;
+  width: 80%;
+  font-family: 'Baloo Tamma', cursive;
+  font-size: 30px;
+ text-align: center;
 
+}
 .text1{
 
   margin-top: 50px;
@@ -190,10 +202,95 @@ figure{
   -webkit-animation: mundogirando 5s infinite linear;
 }
 .lunaP{
-
   position: absolute;
   top:40%;
 }
+.venus{
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height:80px;
+  background:url('../img/venus.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 3s infinite linear;
+}
+.venusP{
+  position: absolute;
+  top:74%;
+}
+.jupiter{
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height:120px;
+  background:url('../img/jupiter.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 4s infinite linear;
+}
+.jupiterP{
+  position: absolute;
+  top:49%;
+}
+.mercurio{
+  position: absolute;
+  display: inline-block;
+  width: 90px;
+  height:90px;
+  background:url('../img/mercurio.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.mercurioP{
+  position: absolute;
+  top:70%;
+}
+.saturno{
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height:100px;
+  background:url('../img/saturno.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.saturnoP{
+  position: absolute;
+  top:25%;
+}
+.neptuno{
+  position: absolute;
+  display: inline-block;
+  width: 135px;
+  height:135px;
+  background:url('../img/saturno.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.neptunoP{
+  position: absolute;
+  top:650%;
+}
+
 
 /*------planetas-----*/
 /*-------objrtos-----*/
@@ -232,6 +329,101 @@ figure{
 .nave_esp img{
   width: 70px;
 }
+.aeroazul img{
+  width: 200px;
+
+}
+.aeroazul{
+  display: inline-block;
+  position: absolute;
+  top:50%;
+}
+.aeroverde img{
+  width: 200px;
+
+}
+.aeroverde{
+  display: inline-block;
+  position: absolute;
+  top:10%;
+}
+.globo1 img{
+  width: 100px;
+
+}
+.globo1{
+  display: inline-block;
+  position: absolute;
+  top:30%;
+}.globo2 img{
+  width: 100px;
+
+}
+.globo2{
+  display: inline-block;
+  position: absolute;
+  top:40%;
+}
+.globo3 img{
+  width: 100px;
+
+}
+.globo3{
+  display: inline-block;
+  position: absolute;
+  top:20%;
+}.globo4 img{
+  width: 100px;
+
+}
+.globo4{
+  display: inline-block;
+  position: absolute;
+  top:60%;
+}.globo5 img{
+  width: 100px;
+
+}
+.globo5{
+  display: inline-block;
+  position: absolute;
+  top:70%;
+}.globo6 img{
+  width: 100px;
+
+}
+.globo6{
+  display: inline-block;
+  position: absolute;
+  top:20%;
+}
+.p1{
+  position: absolute;
+  top:40px;
+  right: 18px;
+}
+.p2{
+  position: absolute;
+  bottom: 29px;
+  left:  37px;
+
+}
+.cuadro
+{
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+
+  position: relative;
+  top: 250px;
+}
+.cuadro img{
+  width: 200px;
+}
+
+
+
+
 
 /*-------objrtos-----*/
 
@@ -258,6 +450,7 @@ figure{
 .verde{
   left: 33.3%;
   background: #8BD6EB;
+  overflow: hidden;
 
 }
 .azul{
@@ -314,6 +507,15 @@ figure{
 
     display: block;
   }
+  .text2{
+    font-size: 20px;
+  }
+  .azul{
+    height: 700px;
+  }
+  .cuadro{
+    top: 74px;
+  }
 
 }
 /*-----------------RESPONSIVE--------------*/
@@ -325,11 +527,65 @@ figure{
   -webkit-animation: walkN 30.0s linear  infinite;
 }
 .objetoP{
-  -webkit-animation: walkP 28.0s linear  infinite;
+  -webkit-animation: walkP 48.0s linear  infinite;
 }
-.objetoN                   {
+.objetoP2{
+  -webkit-animation: walkP 30.0s linear  infinite;
+}
+.objetoN{
   -webkit-animation: walkN 10.0s linear  infinite;
 }
+.objetoN2{
+  -webkit-animation: walkN 30.0s linear  infinite;
+}
+.objetoN3{
+  -webkit-animation: walkN 48.0s linear  infinite;
+}
+.planetaPR{
+  -webkit-animation: walkPR 75.0s linear  infinite;
+
+}
+.planetaNR{
+  -webkit-animation: walkNR 80.0s linear  infinite;
+
+}
+.planetaNR2{
+  -webkit-animation: walkNR2 180.0s linear  infinite;
+
+}
+.planetaPMR{
+  -webkit-animation: walkPMR 105.0s linear  infinite;
+
+}
+.planetaNMR{
+  -webkit-animation: walkNMR 120.0s linear  infinite;
+
+}
+.planetaPMR2{
+  -webkit-animation: walkPMR 175.0s linear  infinite;
+
+}
+.planetaNMR2{
+  -webkit-animation: walkNMR 290.0s linear  infinite;
+
+}
+.objetoPR{
+  -webkit-animation: walkPR 55.0s linear  infinite;
+
+}
+.objetoNR{
+  -webkit-animation: walkNR 60.0s linear  infinite;
+
+}
+.objetoPMR{
+  -webkit-animation: walkPMR 45.0s linear  infinite;
+
+}
+.objetoNMR{
+  -webkit-animation: walkNMR 38.0s linear  infinite;
+
+}
+
 
 
 
@@ -352,6 +608,28 @@ figure{
   }
 
 }
+@-webkit-keyframes walkPR{
+  0% {
+
+    left: -60%;
+  }
+  100% {
+
+    left: 120%;
+  }
+
+}
+@-webkit-keyframes walkPMR{
+  0% {
+
+    left: -120%;
+  }
+  100% {
+
+    left: 120%;
+  }
+
+}
 @-webkit-keyframes walkN{
   0% {
 
@@ -363,10 +641,43 @@ figure{
   }
 
 }
+@-webkit-keyframes walkNR{
+  0% {
+
+    left: 160%;
+  }
+  100% {
+
+    left: -20%;
+  }
+
+}
+@-webkit-keyframes walkNR2{
+  0% {
+
+    left: 160%;
+  }
+  100% {
+
+    left: -60%;
+  }
+
+}
+@-webkit-keyframes walkNMR{
+  0% {
+
+    left: 190%;
+  }
+  100% {
+
+    left: -60%;
+  }
+
+}
 /*-------------  ANIMACION      ----*/
 
 
 
 .principal {
-    display: none;
+  display: none;
 }
