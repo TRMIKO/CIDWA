@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body , html{
+  widows: 100%;
+  height: 100%;
+  position: relative;
+}
+.flex{
+
+  display: flex;
+  justify-content: center;
+}
+
+.primero{
+  background-color: #000120;
+  height:  100%;
+  width: 33%;
+  float: left;
+
+}
+.segundo{
+  /*background-color:  #8BD6EB;*/
+  background-color: #1456aa;
+  height:  100%;
+  width: 33%;
+  float: left;
+}
+.tercero{
+  /*background-color: #e67e22;*/
+  background-color:#e7e7e7;
+  height:  100%;
+  width: 33%;
+  float: left;
+}
+.logo{
+  position: absolute;
+  width: 320px;
+  top: 40%;
+}
+/*---------objetos--------*/
+.p1{
+  position: absolute;
+  top:10px;
+  right: 27px;
+}
+.p2{
+  position: absolute;
+  bottom: 58px;
+  left:  12px;
+
+}
+.cuadro{
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+
+  position: absolute;;
+  top: 40%;
+}
+.cuadro img{
+  width: 150px;
+}
+/*---------objetos--------*/
+
+.mundo{
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  width: 200px;
+  height:200px;
+  background:url('../img/tierra.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+
+.derecha{
+  -webkit-animation: 3s der linear infinite;
+}
+.izquierda {
+  -webkit-animation: 3s izq linear infinite;
+}
+
+@-webkit-keyframes mundogirando {
+  from{
+    background-position: left center;
+  }
+  to{
+    background-position: -396px center;
+  }
+}
+@-webkit-keyframes der {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes izq {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@media screen and (max-width:1000px) {
+
+  .primero{
+    height: 33%;
+    min-height: 400px;
+    width: 100%;
+    float: none;
+  }
+  .segundo{
+    height: 33%;
+    min-height: 400px;
+    width: 100%;
+    float: none;
+  }
+  .tercero{
+    height: 33%;
+    min-height: 400px;
+    width: 100%;
+    float: none;
+  }
+  .mundo{
+    top: 12%;
+  }
+  .cuadro{
+    position: relative;
+    top:100px;
+  }
+  .logo{
+    width: 320px;
+    top: 63%;
+  }
+}
