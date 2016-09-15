@@ -143,3 +143,7 @@ body , html{
     top: 63%;
   }
 }
+.menu{
+    z-index: 50;
+    position: absolute;
+}
