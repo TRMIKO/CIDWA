@@ -6,87 +6,79 @@ function mediaQuery() {
         $(".primero").click(function () {
             $(".segundo").animate({
                 "height": "0%",
-                "min-height": "0px",
-                "width": "100%"
+                "min-height": "0px"
             }, "slow");
             $(".tercero").animate({
                 "height": "0%",
-                "min-height": "0px",
-                "width": "100%"
+                "min-height": "0px"
             }, "slow");
             $(".logo").hide("slow");
             $(".cuadro").hide("slow");
             $(this).animate({
-                "height": "100%",
-                "width": "100%"
+                "height": "100%"
             }, "slow");
         });
         $(".segundo").click(function () {
             $(".primero").animate({
                 "height": "0%",
-                "min-height": "0px",
-                "width": "100%"
+                "min-height": "0px"
             }, "slow");
             $(".tercero").animate({
                 "height": "0%",
-                "min-height": "0px",
-                "width": "100%"
+                "min-height": "0px"
             }, "slow");
             $(".mundo").hide("slow");
             $(".cuadro").hide("slow");
             $(this).animate({
-                "height": "100%",
-                "width": "100%"
+                "height": "100%"
             }, "slow");
         });
         $(".tercero").click(function () {
             $(".primero").animate({
                 "height": "0%",
-                "min-height": "0px",
-                "width": "100%"
+                "min-height": "0px"
             }, "slow");
             $(".segundo").animate({
                 "height": "0%",
-                "min-height": "0px",
-                "width": "100%"
+                "min-height": "0px"
             }, "slow");
             $(".mundo").hide("slow");
             $(".logo").hide("slow");
             $(this).animate({
-                "height": "100%",
-                "width": "100%"
+                "height": "100%"
             }, "slow");
         });
         $(".menu").click(function () {
             $(".primero").animate({
                 "height": "33%",
-                "min-height": "400px",
-                "width": "100%"
-            }, "slow");
+                "min-height": "400px"
+            }, "slow", function () {
+                $(this).removeAttr("style");
+            });
             $(".segundo").animate({
                 "height": "33%",
-                "min-height": "400px",
-                "width": "100%"
-            }, "slow");
+                "min-height": "400px"
+            }, "slow", function () {
+                $(this).removeAttr("style");
+            });
             $(".tercero").animate({
                 "height": "33%",
-                "min-height": "400px",
-                "width": "100%"
-            }, "slow");
+                "min-height": "400px"
+            }, "slow", function () {
+                $(this).removeAttr("style");
+            });
             $(".logo").show("slow");
             $(".cuadro").show("slow");
             $(".mundo").show("slow");
         });
-
+        console.log("menor a 800");
     } else {
         $(".primero").click(function () {
             $(".segundo").animate({
-                "width": "0%",
-                "min-height": "0px"
+                "width": "0%"
             }, "slow");
             $(".tercero").animate({
-                "width": "0%",
-                "min-height": "0px"
+                "width": "0%"
             }, "slow");
             $(".logo").hide("slow");
             $(".cuadro").hide("slow");
@@ -96,12 +88,10 @@ function mediaQuery() {
         });
         $(".segundo").click(function () {
             $(".primero").animate({
-                "width": "0%",
-                "min-height": "0px"
+                "width": "0%"
             }, "slow");
             $(".tercero").animate({
-                "width": "0%",
-                "min-height": "0px"
+                "width": "0%"
             }, "slow");
             $(this).animate({
                 "width": "100%"
@@ -111,12 +101,10 @@ function mediaQuery() {
         });
         $(".tercero").click(function () {
             $(".primero").animate({
-                "width": "0%",
-                "min-height": "0px"
+                "width": "0%"
             }, "slow");
             $(".segundo").animate({
-                "width": "0%",
-                "min-height": "0px"
+                "width": "0%"
             }, "slow");
             $(this).animate({
                 "width": "100%"
@@ -127,66 +115,41 @@ function mediaQuery() {
         $(".menu").click(function () {
             $(".primero").animate({
                 "width": "33%",
-                "height": "100%",
-                "min-height": "400px",
-            }, "slow");
+            }, "slow", function () {
+                $(this).removeAttr("style");
+            });
             $(".segundo").animate({
                 "width": "33%",
-                "height": "100%",
-                "min-height": "400px",
-            }, "slow");
+            }, "slow", function () {
+                $(this).removeAttr("style");
+            });
             $(".tercero").animate({
                 "width": "33%",
-                "height": "100%",
-                "min-height": "400px",
-            }, "slow");
+            }, "slow", function () {
+                $(this).removeAttr("style");
+            });
             $(".logo").show("slow");
             $(".cuadro").show("slow");
             $(".mundo").show("slow");
         });
+        console.log("mayor a 800");
     }
 }
 
 function valorDefecto() {
     if (redimension.matches) {
-        $(".primero").css({
-            "width": "100%",
-            "height": "33%",
-            "min-height": "400px"
-        });
-        $(".segundo").css({
-            "width": "100%",
-            "height": "33%",
-            "min-height": "400px"
-        });
-        $(".tercero").css({
-            "width": "100%",
-            "height": "33%",
-            "min-height": "400px"
-        });
+        $(".primero").removeAttr("style");
+        $(".segundo").removeAttr("style");
+        $(".tercero").removeAttr("style");
     } else {
-        $(".primero").css({
-            "height": "100%",
-            "width": "33%",
-            "min-height": "0px"
-        });
-        $(".segundo").css({
-            "height": "100%",
-            "width": "33%",
-            "min-height": "0px"
-        });
-        $(".tercero").css({
-            "height": "100%",
-            "width": "33%",
-            "min-height": "0px"
-        });
-        $(".logo").show("slow");
-        $(".cuadro").show("slow");
-        $(".mundo").show("slow");
+        $(".primero").removeAttr("style");
+        $(".segundo").removeAttr("style");
+        $(".tercero").removeAttr("style");
     }
     $(".logo").show("slow");
     $(".cuadro").show("slow");
     $(".mundo").show("slow");
+    console.log("borrado de estilo");
 }
 
 consulta.addListener(mediaQuery);
