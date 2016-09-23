@@ -1,5 +1,6 @@
 var consulta = window.matchMedia('(max-width: 1000px)');
 var redimension = window.matchMedia('(max-width: 1000px)');
+var tam = $(window).width();
 
 function mediaQuery() {
     if (consulta.matches) {
@@ -43,6 +44,7 @@ function mediaQuery() {
                 "min-height": "0px"
             }, "slow");
             $(".mundo").hide("slow");
+            $(".cuadro").hide("slow");
             $(".logo").hide("slow");
             $(this).animate({
                 "height": "100%"
@@ -111,20 +113,21 @@ function mediaQuery() {
             }, "slow");
             $(".mundo").hide("slow");
             $(".logo").hide("slow");
+            $(".cuadro").hide("slow");
         });
         $(".menu").click(function () {
             $(".primero").animate({
-                "width": "33%",
+                "width": "33%"
             }, "slow", function () {
                 $(this).removeAttr("style");
             });
             $(".segundo").animate({
-                "width": "33%",
+                "width": "33%"
             }, "slow", function () {
                 $(this).removeAttr("style");
             });
             $(".tercero").animate({
-                "width": "33%",
+                "width": "33%"
             }, "slow", function () {
                 $(this).removeAttr("style");
             });
@@ -137,19 +140,12 @@ function mediaQuery() {
 }
 
 function valorDefecto() {
-    if (redimension.matches) {
-        $(".primero").removeAttr("style");
-        $(".segundo").removeAttr("style");
-        $(".tercero").removeAttr("style");
-    } else {
-        $(".primero").removeAttr("style");
-        $(".segundo").removeAttr("style");
-        $(".tercero").removeAttr("style");
+    if (tam > 1000 && $(window).width() < 1000) {
+        location.reload();
     }
-    $(".logo").show("slow");
-    $(".cuadro").show("slow");
-    $(".mundo").show("slow");
-    console.log("borrado de estilo");
+    if (tam < 1000 && $(window).width() > 1000) {
+        location.reload();
+    }
 }
 
 consulta.addListener(mediaQuery);
