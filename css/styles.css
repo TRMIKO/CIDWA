@@ -4,6 +4,7 @@
 }
 
 body , html{
+  background-color: black;
   widows: 100%;
   height: 100%;
   position: relative;
@@ -23,14 +24,15 @@ body , html{
 }
 .segundo{
   /*background-color:  #8BD6EB;*/
-  background-color: #1456aa;
+  background-color: #29AAE1;
   height:  100%;
   width: 33%;
   float: left;
 }
 .tercero{
   /*background-color: #e67e22;*/
-  background-color:#e7e7e7;
+  background-image:url('../img/fondo-largo6.png');
+  background-size: cover;
   height:  100%;
   width: 33%;
   float: left;
