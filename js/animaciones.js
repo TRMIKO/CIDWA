@@ -1,6 +1,11 @@
 var consulta = window.matchMedia('(max-width: 1000px)');
 var redimension = window.matchMedia('(max-width: 1000px)');
 var tam = $(window).width();
+var bandera = 1;
+
+$(document).ready(function () {
+    particlesJS('particles-js', jsonPuntos);
+});
 
 function mediaQuery() {
     if (consulta.matches) {
@@ -17,7 +22,13 @@ function mediaQuery() {
             $(".cuadro").hide("slow");
             $(this).animate({
                 "height": "100%"
-            }, "slow");
+            }, "slow", function () {
+                if (bandera === 1) {
+                    particlesJS('particles-js', jsonPuntos);
+                    bandera = 0;
+                }
+            });
+            $(".menu").show("slow");
         });
         $(".segundo").click(function () {
             $(".primero").animate({
@@ -33,6 +44,7 @@ function mediaQuery() {
             $(this).animate({
                 "height": "100%"
             }, "slow");
+            $(".menu").show("slow");
         });
         $(".tercero").click(function () {
             $(".primero").animate({
@@ -49,6 +61,7 @@ function mediaQuery() {
             $(this).animate({
                 "height": "100%"
             }, "slow");
+            $(".menu").show("slow");
         });
         $(".menu").click(function () {
             $(".primero").animate({
@@ -56,6 +69,10 @@ function mediaQuery() {
                 "min-height": "400px"
             }, "slow", function () {
                 $(this).removeAttr("style");
+                if (bandera === 0) {
+                    particlesJS('particles-js', jsonPuntos);
+                    bandera = 1;
+                }
             });
             $(".segundo").animate({
                 "height": "33%",
@@ -72,6 +89,7 @@ function mediaQuery() {
             $(".logo").show("slow");
             $(".cuadro").show("slow");
             $(".mundo").show("slow");
+            $(".menu").hide("slow");
         });
         console.log("menor a 800");
     } else {
@@ -84,9 +102,15 @@ function mediaQuery() {
             }, "slow");
             $(".logo").hide("slow");
             $(".cuadro").hide("slow");
+            $(".menu").show("slow");
             $(this).animate({
                 "width": "100%"
-            }, "slow");
+            }, "slow", function () {
+                if (bandera === 1) {
+                    particlesJS('particles-js', jsonPuntos);
+                    bandera = 0;
+                }
+            });
         });
         $(".segundo").click(function () {
             $(".primero").animate({
@@ -100,6 +124,7 @@ function mediaQuery() {
             }, "slow");
             $(".mundo").hide("slow");
             $(".cuadro").hide("slow");
+            $(".menu").show("slow");
         });
         $(".tercero").click(function () {
             $(".primero").animate({
@@ -114,12 +139,17 @@ function mediaQuery() {
             $(".mundo").hide("slow");
             $(".logo").hide("slow");
             $(".cuadro").hide("slow");
+            $(".menu").show("slow");
         });
         $(".menu").click(function () {
             $(".primero").animate({
                 "width": "33%"
             }, "slow", function () {
                 $(this).removeAttr("style");
+                if (bandera === 0) {
+                    particlesJS('particles-js', jsonPuntos);
+                    bandera = 1;
+                }
             });
             $(".segundo").animate({
                 "width": "33%"
@@ -134,6 +164,7 @@ function mediaQuery() {
             $(".logo").show("slow");
             $(".cuadro").show("slow");
             $(".mundo").show("slow");
+            $(".menu").hide("slow");
         });
         console.log("mayor a 800");
     }
