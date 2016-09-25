@@ -122,6 +122,7 @@ body , html{
     float: none;
   }
   .segundo{
+      position: relative;
     height: 33%;
     min-height: 400px;
     width: 100%;
@@ -141,8 +142,9 @@ body , html{
     top:100px;
   }
   .logo{
+      position: absolute;
     width: 320px;
-    top: 63%;
+    top: 23%;
   }
 }
 .menu{
