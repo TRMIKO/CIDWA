@@ -88,6 +88,43 @@ body , html{
 .izquierda {
   -webkit-animation: 3s izq linear infinite;
 }
+.abajo{
+    -webkit-animation :td 40s linear infinite;
+}
+.arriba{
+    -webkit-animation :dt 20s linear infinite;
+}
+
+
+@-webkit-keyframes td{
+    0%{
+        top:0%;
+    }
+    
+    50%{
+        left: 70%;
+    }
+   
+    100%{
+        top: 80%;
+        left:  50%;
+    }
+}
+@-webkit-keyframes dt{
+    0%{
+        bottom:0%;
+        left: 40%;
+    }
+    
+    50%{
+        left: 30%;
+    }
+   
+    100%{
+        bottom: 80%;
+        left:  50%;
+    }
+}
 
 @-webkit-keyframes mundogirando {
   from{
