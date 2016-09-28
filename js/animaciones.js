@@ -18,6 +18,7 @@ function mediaQuery() {
                 "height": "0%",
                 "min-height": "0px"
             }, "slow");
+            $(".mundo").hide("slow");
             $(".logo").hide("slow");
             $(".cuadro").hide("slow");
             $(this).animate({
