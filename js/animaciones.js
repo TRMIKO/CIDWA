@@ -29,6 +29,7 @@ function mediaQuery() {
                 }
             });
             $(".menu").show("slow");
+            $(".container").show("slow");
         });
         $(".segundo").click(function () {
             $(".primero").animate({
@@ -90,6 +91,7 @@ function mediaQuery() {
             $(".cuadro").show("slow");
             $(".mundo").show("slow");
             $(".menu").hide("slow");
+            $(".container").hide("slow");
         });
         console.log("menor a 800");
     } else {
@@ -111,6 +113,7 @@ function mediaQuery() {
                     bandera = 0;
                 }
             });
+            $(".container").show("slow");
         });
         $(".segundo").click(function () {
             $(".primero").animate({
@@ -165,6 +168,7 @@ function mediaQuery() {
             $(".cuadro").show("slow");
             $(".mundo").show("slow");
             $(".menu").hide("slow");
+            $(".container").hide("slow");
         });
         console.log("mayor a 800");
     }
